@@ -1,13 +1,15 @@
 import os
 import sys
 import time
-from colorama import Fore, Style, Back, init
-from typing import Optional
-import threading
+from colorama import Fore, Style, init
 from datetime import datetime
+import sys
 
-from dork_extract import ext_dork
-from help import help_menu
+sys.path.append(os.path.join(os.path.dirname(__file__),'files'))
+from files.help import help_menu
+
+sys.path.append(os.path.join(os.path.dirname(__file__),'files'))
+from files.dork_extract import ext_dork
 
 init(autoreset=True)
 
